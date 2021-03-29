@@ -1,6 +1,18 @@
 # Project2
+FinTech problem that machine learning can help solve : A comparitive analysis of various Crypto currencies BTC, ETC, ADA, USDT, XRP, LTC, TRX, TUSD, DGB, BSV using technical indicators including : Exponential Moving Averages in feature 1, Exponential Moving Average of Daily Return Volatility in feature 2, Bollinger Bands in feature 3 . A machine learning model based on the three signals : 'crossover_signal', 'vol_trend_signal', 'bollinger_signal' and setting the dependent variable values based on the logic where if daily return is greater than 0, then 1, else, 0. One year data is used to build the model. Then two sets of data are  Constructed the X_train and y_train. 
 
-Foobar is a Python library for dealing with word pluralization.
+Then SKLearn linear regression using just the training set (X_train, Y_train) is used to fit the data. A confusion matrix, accuracy score is built. The predictions are calculated based on the model built for all the cryptos used in the sample. Graphs are plotted with the predicted values. The predicted values are replaced with -1 where 0 to depict the short situation which is the reverse of long positions. The cumulative return is then plotted.
+
+Requirements of the project are below:
+Apply ML in the context of technologies learned.
+You must use: Scikit-Learn and/or another machine learning library.
+You must use at least two of the below:
+* Scikit-Learn
+* Tensorflow
+* Keras
+* Google Colab
+* Amazon SageMaker
+* Amazon Lex
 
 ## Project Proposal
 
