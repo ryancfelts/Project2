@@ -92,3 +92,22 @@ The technical requirements for Project 2 are as follows.
 * [ ] Use one new machine learning library, machine learning model, or evaluation metric that hasn't been covered in class.
 
 * [ ] Create a README.md in your repo with a write-up summarizing your project. Be sure to include any usage instructions to set up and use the model.
+
+# Presentation Requirements
+
+The presentation requirements for the project are as follows.
+
+* [ ] Be at least 8 to 10 minutes long (check with the instructor for the official presentation time).
+
+* [ ] Describe the core message or hypothesis for your project.
+
+* [ ] Describe the predictive model chose and why this model was chosen.
+
+* [ ] Describe the data preparation and model training process.
+
+* [ ] Describe the techniques used to evaluate the model performance.
+
+* [ ] Summarize your conclusions and predictions. This should include a numerical summary (what data your model yielded), as well as visualizations of that summary (plots of the final model evaluation and predictions).
+
+* [ ] Discuss the implications of your findings. This is where you get to have an open-ended discussion about what your findings mean.
+
