@@ -13,6 +13,8 @@ You must use at least two of the below:
 * Google Colab
 * Amazon SageMaker
 * Amazon Lex
+ 
+ Apart from the Cryptos described above, we also chose the top 10 market cap stocks to use the "LSTM Stock Predictor" Using Closing Prices and build the model. The stocks are : tickers "AAPL","MSFT","AMZN","GOOG","FB","TSLA","BRK.A","V","JPM","JNJ". These are the top 10 US stocks on the NYSE by MarketCap found on  stock found http://www.iweblists.com/us/commerce/MarketCapitalization.html.
 
 ## Project Proposal
 
