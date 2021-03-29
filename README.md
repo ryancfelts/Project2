@@ -18,6 +18,8 @@ Write this as a brief summary of your interests and intent, including:
 
 Once your group has written an outline, it's time to start hunting for data. You are free to use data from any source, but we recommend the following curated sources of high-quality data:
 
+* [data.world](https://alpaca.markets/)
+
 * [data.world](https://data.world/)
 
 * [Kaggle](https://www.kaggle.com/)
