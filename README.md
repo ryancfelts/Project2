@@ -142,3 +142,5 @@ You are free to structure your presentations to your liking, but students tend t
 
 ## References
 https://www.irjet.net/archives/V5/i3/IRJET-V5I3788.pdf
+
+* Assumptions and basis of the model : An online learning algorithm that utilizes a kind of recurrent neural network (RNN) called Long Short Term Memory (LSTM),  where the weights are adjusted for individual data points using stochastic gradient descent.
