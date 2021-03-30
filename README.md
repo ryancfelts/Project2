@@ -23,9 +23,10 @@ We are interested in building Machine Learning based models , combine with algor
 
 ## Finding Data
 
-Our team based the data collection to 
+Our team based the data collection to the following websites/ data providers:
 
-* [data.world](https://www.shrimpy.io/dashboard)
+* [(https://www.shrimpy.io/dashboard)]
+* [(https://alpaca.markets/)]
 
 ## Data Preparation & Model Training
 
