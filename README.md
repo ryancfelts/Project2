@@ -30,7 +30,9 @@ Our team based the data collection to the following websites/ data providers:
 
 ## Data Preparation & Model Training
 
-Machine learning typically requires extensive data preparation before the model can be trained. We used  Jupyter , Google Colab to prepare a training and testing dataset and to train the machine-learning models.  The training data was used to fit the model. The notebook references are : CryptoData.ipynb for fetching the data, CryptoCleaning.ipynb was used to make data suitable for analysis including dropping nulls and other such cleansing processes. CryptoAnalysis.ipynb was used to conduct the initial analysis and preparing the test , train data to be available to fit the model. ModelBUilding.ipynb hosts the model built.
+Machine learning typically requires extensive data preparation before the model can be trained. We used  Jupyter , Google Colab to prepare a training and testing dataset and to train the machine-learning models.  The training data was used to fit the model. The notebook references are : CryptoData.ipynb for fetching the data, CryptoCleaning.ipynb was used to make data suitable for analysis including dropping nulls and other such cleansing processes. CryptoAnalysis.ipynb was used to conduct the initial analysis and preparing the test , train data to be available to fit the model. ModelBUilding.ipynb hosts the model built. 
+
+The top 10 market cap stocks were analyzed using google colab at https://colab.research.google.com/drive/14DMA_7xkSiajWAo0s67mD2SefvpL_HTz#scrollTo=C6WAgBBBpIvQ
 
 We used Google Colab to prepare data in  Top10_MarketCap_Model.ipynb. LSTM(Long Short Term Memmory based predictor model was used to fit the data. An interesting article on LSTM : https://colah.github.io/posts/2015-08-Understanding-LSTMs/#:~:text=Long%20Short%20Term%20Memory%20networks,many%20people%20in%20following%20work.
  
