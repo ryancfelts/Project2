@@ -139,3 +139,6 @@ You are free to structure your presentations to your liking, but students tend t
 
   * Open-floor Q&A with the audience.
 
+
+## References
+https://www.irjet.net/archives/V5/i3/IRJET-V5I3788.pdf
