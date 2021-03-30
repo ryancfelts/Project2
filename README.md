@@ -1,11 +1,11 @@
 # Project2
-FinTech problem that machine learning can help solve : A comparitive analysis of various Crypto currencies BTC, ETC, ADA, USDT, XRP, LTC, TRX, TUSD, DGB, BSV using technical indicators including : Exponential Moving Averages in feature 1, Exponential Moving Average of Daily Return Volatility in feature 2, Bollinger Bands in feature 3 . A machine learning model Random Forest Trading based on the three signals : 'crossover_signal', 'vol_trend_signal', 'bollinger_signal' and setting the dependent variable values based on the logic where if daily return is greater than 0, then 1, else, 0. One year data is used to build the model. Then two sets of data are  Constructed the X_train and y_train. 
+FinTech problem that machine learning can help solve : An analysis of various Crypto currencies BTC, ETC, ADA, USDT, XRP, LTC, TRX, TUSD, DGB, BSV using technical indicators including : Exponential Moving Averages in feature 1, Exponential Moving Average of Daily Return Volatility in feature 2, Bollinger Bands in feature 3 . A machine learning model Random Forest Trading based on the three signals : 'crossover_signal', 'vol_trend_signal', 'bollinger_signal' and setting the dependent variable values based on the logic where if daily return is greater than 0, then 1, else, 0. One year data is used to build the model. Then two sets of data are  Constructed the X_train and y_train. 
 
 Then SKLearn linear regression using just the training set (X_train, Y_train) is used to fit the data. A confusion matrix, accuracy score is built. The predictions are calculated based on the model built for all the cryptos used in the sample. Graphs are plotted with the predicted values. The predicted values are replaced with -1 where 0 to depict the short situation which is the reverse of long positions. The cumulative return is then plotted.
 
 Requirements of the project are below:
 Apply ML in the context of technologies learned.
-You must use: Scikit-Learn and/or another machine learning library.
+You must use: Scikit-Learn and/or another machine learning library (Used MinMaxScaler Model)
 You must use at least two of the below:
 * Scikit-Learn
 * Tensorflow
@@ -18,62 +18,33 @@ You must use at least two of the below:
 
 ## Project Proposal
 
-Write this as a brief summary of your interests and intent, including:
-
-* The kind of data you'd like to work with and the field you're interested in (e.g., trading, quantitative analysis).
-
-* Possible source for such data.
-
-* Candidate machine learning or statistical models that you may want to explore.
-
-> Our project is to predict credit card fraud. We'll fit a random forest algorithm to lending club data to create a predictive model. We will also fit a deep neural network model to the data and compare the performance of both models to determine which has sufficient predictive power.
+We are interested in building Machine Learning based models , combine with algorithmic / quantitative trading aspects and evolve an automated buy/sell signal generator or predcitive stock/crypto prices.
+* We chose some of the top traded cryptos and 10 stocks by market capitablization for this project. Shrimpy apis , Alcapa trades apis have been the primary sources to load data for the cryptos and stocks respectively. We'll fit a random forest algorithm to cryptos data from shrimpy  to create a predictive model with iterative features.
 
 ## Finding Data
 
-Once your group has written an outline, it's time to start hunting for data. You are free to use data from any source, but we recommend the following curated sources of high-quality data:
+Our team based the data collection to 
 
-* [data.world](https://alpaca.markets/)
-
-* [data.world](https://data.world/)
-
-* [Kaggle](https://www.kaggle.com/)
-
-* [Data.gov](https://www.data.gov)
-
-* [Public APIs](https://github.com/abhishekbanthia/Public-APIs)
-
-* [Awesome-APIs List](https://github.com/Kikobeats/awesome-api)
-
-* [Medium APIs List](https://medium.com/@benjamin_libor/a-curated-collection-of-over-150-apis-to-build-great-products-fdcfa0f361bc)
-
-Chances are you'll have to update your Project Outline as you explore the available data. This is fine—adjustments like this are part of the process! Just make sure everyone in the group is up to speed on the goals of the project as you make changes.
-
-Make sure that your data is not too large for local analysis. Big-data datasets are difficult to manage locally, so consider a subset of that data or a different dataset altogether.
+* [data.world](https://www.shrimpy.io/dashboard)
 
 ## Data Preparation & Model Training
 
-Machine learning typically requires extensive data preparation before the model can be trained. Use Jupyter, Google Colab, or AWS SageMaker to prepare a training and testing dataset and to train the machine-learning model.
+Machine learning typically requires extensive data preparation before the model can be trained. We used  Jupyter , Google Colab to prepare a training and testing dataset and to train the machine-learning models.  The training data was used to fit the model. The notebook references are : CryptoData.ipynb for fetching the data, CryptoCleaning.ipynb was used to make data suitable for analysis including dropping nulls and other such cleansing processes. CryptoAnalysis.ipynb was used to conduct the initial analysis and preparing the test , train data to be available to fit the model. ModelBUilding.ipynb hosts the model built.
 
-Use the training data to fit the model.
+We used Google Colab to prepare data in  Top10_MarketCap_Model.ipynb. LSTM(Long Short Term Memmory based predictor model was used to fit the data. An interesting article on LSTM : https://colah.github.io/posts/2015-08-Understanding-LSTMs/#:~:text=Long%20Short%20Term%20Memory%20networks,many%20people%20in%20following%20work.
+ 
 
 ## Model Evaluation
 
-Use the testing data to evaluate the model. Create any necessary tables, charts, plots, or statistical analysis to report the model performance.
+The testing data to evaluate the model. Created  necessary tables, charts, plots, or statistical analysis to report the model performance.
 
 ## Predictions and Conclusions
 
 Summarize your conclusions and predictions. This should include a numerical summary (what data your model yielded), as well as visualizations of that summary (plots of the final model evaluation and predictions).
 
-Optionally, deploy the model as an interactive dashboard or interface (Lex or SageMaker).
-
-Finally, be sure that your projects meet the [technical requirements](TechnicalRequirements.md).
-
 ## Presentation
 
-After you've tweaked your model to your satisfaction, you'll put together a presentation to show off your work, explain your process, and discuss your conclusions.
-
-This presentation will be delivered as a slideshow, and it should give your classmates and instructional staff an overview of your work. PowerPoint, Keynote, and Google Slides are all acceptable for building slides.
-
+Guidelines:
 As long as your slides meet the [presentation requirements](PresentationRequirements.md), you are free to structure the presentation however you wish, but students are often successful with the format laid out in the [presentation guidelines](PresentationGuidelines.md).
 
 ## Submission
@@ -82,7 +53,6 @@ In addition to submitting your project on Bootcamp Spot individually, please [fi
 
 ## Contributing
 Francene, Ryan and Murthy contributed to this project apart from invaluable guidance from Instructors: Steve and Kowsi. We also would like to thank all the other students in our class for all the interactions and creative ideas that made this possible.
-
 
 ## Licencing
 No licencing requirements exists for this version of the project deliverables
